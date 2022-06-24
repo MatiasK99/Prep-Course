@@ -79,9 +79,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90) {
-    return true ;
+    return true;
   } else {
-    return false ;
+    return false;
   }
 }
 
@@ -89,23 +89,23 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  return 50 > num 
+  return num > 50;
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x % y ;
+  return x % y;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if num % 2 = 0 {
-    return true ;
+  if( num % 2 === 0) {
+    return true;
   } else {
-    return false ;
+    return false;
   }
 }
 
@@ -113,10 +113,10 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if num % 5 = 9 {
-    return true ;
+  if(num % 2 === 1) {
+    return true;
   } else {
-    return false ;
+    return false;
   }
 }
 
@@ -130,7 +130,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return num * num * num ;
+  return num * num * num;
 }
 
 function elevar(num, exponent) {
@@ -154,7 +154,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random ()
+  return Math.random ();
 }
 
 function esPositivo(numero) {
@@ -192,9 +192,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return saludo {
-     (Hola + nombre )
-  }
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -232,13 +230,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.legth > 1) {
-    return "Dato incorrecto" {
-      if (Letra = a - letra = e letra = i letra = o letra =) {
-        return "Es vocal"
-      }
-      return "Dato incorrecto"
-      
+  if(letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
+
 }
 
 
